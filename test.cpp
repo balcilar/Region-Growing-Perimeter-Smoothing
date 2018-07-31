@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include <opencv2/opencv.hpp>
-#include "ImageProc2.h"
+#include "ImageProc.h"
 
 using namespace cv;
 
