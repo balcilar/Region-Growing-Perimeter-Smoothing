@@ -1,3 +1,6 @@
+// written by Muhammet Balcilar, France
+// All rights reserved
+
 #include <stdio.h>
 #include <opencv2/opencv.hpp>
 #include<vector>
