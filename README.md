@@ -2,7 +2,7 @@
 
 This project consist of test.cpp and ImageProc.h source files. test.cpp is for taking parameters from terminal and perform desired command. All created functions are in ImageProc.h file.
 
-## compile
+## Compile
 There is just one CmakeLists.txt file and when you compile it both task1 and task2 executables will be created.
 please use following commands.    
   cmake .   
@@ -30,6 +30,8 @@ Following command for determining object region for test3.png image with start 1
 
 Note that smoothing parameter has to be in range of (0 1), if you give any number out of range than api does not perform smoothing.
 if you do not want to apply any smoothing basicall you can give that parameter as 0 or 1.
+
+## Results
 
 Here is the some results of the high reolution image under smoothcoef=0.005 and smoothcoef=0.1 uner starting point of (1500,617) and threashold=5.
 
