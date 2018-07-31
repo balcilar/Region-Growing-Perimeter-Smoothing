@@ -3,11 +3,13 @@
 This project consist of test.cpp and ImageProc.h source files. test.cpp is for taking parameters from terminal and perform desired command. All created functions are in ImageProc.h file.
 
 ## Compile
-There is just one CmakeLists.txt file and when you compile it both task1 and task2 executables will be created.
-please use following commands.    
-  cmake .   
-  make 
-  
+There is a CmakeLists.txt file and when you compile project. Executables will be created.
+Please use following commands.    
+```
+ $ cmake .   
+ $ make 
+```
+
 # Run
 
 I implemented to border tracking algorithm to determine the border of the object in (x,y) location, then I implemented Catmull-Rom algorithm to smooth the border. Executable needs one more extra parameter which indicates the coefficient of the smoothing algorithm. as you know Catmull_Rom algorithm needs 4 consecutive points on the border of the object. To smooth the border, I resample the border point. Resampling ratio depends on the given parameter. For instance if the smooth coefficient is 0.1, it means I resample the points 10 by 10. So instead of processing 0,1,2,3 point on border for Catmull_Rom algorithm, I used 0,10,20,30th point on border. So Catmull_Rom algorithm tries to interpolate sub-pixel location in using these 4 point. Maybe the size of the output of smoothing function might be determined by user. But I do not pay attention to that and I assume always smoothed curve has 2 times more point according to first found border.
